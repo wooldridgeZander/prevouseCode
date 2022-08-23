@@ -1,0 +1,110 @@
+.dropbtn {
+  background-color: white;
+  color: white
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: lightgrey;
+  min-width: 200px;
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+
+p{
+  font-size: 16px;
+  font-family: 'Stalinist One', cursive;
+}
+
+h1{
+  font-family:georgia,garamond,serif;font-size:16px;font-style:italic;
+  text-align: center;
+  font-size: 24px;
+
+}
+
+h2{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+  text-align: center;
+}
+
+h2::first-letter{
+   font-size: 150%;
+   font-style: italic;
+}
+
+p::first-letter {
+  color:red;
+  font-size: 25px;
+  font-family: 'Stalinist One', cursive;
+ }
+
+ body{
+   background-color: #9FE9DC;
+ }
+
+ .fR{
+   float: right;
+ }
+
+ .fL{
+   float: left;
+ }
+
+ img{
+   margin: 10px;
+   padding:10px;
+ }
+
+ img#brokenW {
+   width: 632px;
+   height: auto;
+ }
+
+ img#eyeFlower {
+   width: 632px;
+   height: auto;
+ }
+
+ img#rRing {
+   width: 632px;
+   height: auto;
+ }
+
+ img#sStone {
+   width: 632px;
+   height: auto;
+ }
+
+ img#sesioty {
+   width: 632px;
+   height: auto;
+ }
+
+ img#prot {
+   width: 632px;
+   height: auto;
+ }

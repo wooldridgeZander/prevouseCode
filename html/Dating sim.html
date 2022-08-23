@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Zwproductions 愛の帰還</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+    <script src="myscript.js"></script>
+    <link rel="stylesheet" href="fp.css"
+    <style>
+    </style>
+    <div class="dropdown">
+    <button class="dropbtn">projects</button>
+    <div class="dropdown-content">
+
+    <a href="index.html">home</a>
+    <a href="Savior_of_middlemist.html">Savior of middlemist</a>
+    <!--<a href="Matchbox.html">Matchbox</a>-->
+    <!--<a href="Turky_trot.html">Turky trot</a>-->
+    <!--<a href="Just_browsing.html">Just browsing</a>-->
+    <a href="Dating sim.html">愛の帰還</a>
+    <a href="jewlry.html">jewlry</a>
+    </div>
+    </div>
+    <div class="dropdown">
+    <button class="dropbtn">sub-sections</button>
+    <div class="dropdown-content">
+
+      <a href="#Backgrround">bacground information</a>
+      <a href="#ui">The user interface</a>
+      <a href="#gamePlay">Game play code</a>
+    </div>
+    </div>
+
+  </head>
+
+  <body>
+
+    <h1 id="top">愛の帰還</h1>
+    <h3>People who made the project posible</h3>
+    <ul>
+      <li>Jackie lawless</li>
+      <li>Zander wooldridge</li>
+    </ul>
+
+    <center><img src="dating_sim/tittleScreen.jpg" alt="tital screen" style="width:775px;height:399px;" onclick="snd.play();"></center>
+    <center><h2 id="Backgrround">Background of the project</h2></center>
+    <p>This project was created at the start of the first covid 19 quarantine. During that time this original idea was to be a part of a one week creative jam then developed further into a project that we developed further.
+    Sadly I have lost contact with the other team members but from this experience I have learned a lot from my experience with the project.</p>
+    <h2 id="ui">The user interface</h2>
+    <img src="dating_sim/mainMenueCode.jpg" alt="mainMenueCode" width="675px" height="299px" class="fR"><img src="dating_sim/introduction.jpg" alt="introduction" width="675px" height="299px" class="fL">
+    <p>Please note that I did not design the user interface, I just did what the designer asked of me. When the game is started up the "event construct" will trigger making the music start playing and having the player have control over the mouse to click one of the two
+    heart shaped buttons. One will take you to the introduction of the game while the other is to see how to play the game which is demonstrated for the image on the right. if they click o the play button then the screen will
+    then go into the introduction side of the code. The image is presented on the left, The entire code is too extensive to show in one image but this is all you need to understand what is going on. when
+    the level is opened a new music track is initiated with the command to enable the mouse cursor is visible. One the play reads and then sees the next button the next set of text will be presented. This is achieved by
+    making the previous text invisible and the next set of text visible. And this is repeated until the end of the sequence is finished where when the player hits the "next" button for the final time will
+    be put into the navigation of the map.</P>
+    <h2 id="gamePlay">Game play code</h2>
+    <img src="dating_sim/varables.jpg" alt="mainMenueCode" width="290px" height="671px" class="fR"/><img src="dating_sim/varableEx.jpg" alt="mainMenueCode" width="1550px" height="671px" class="fL"/>
+    <p class="fL">The game has to have many many variables to be able to correctly make this a dating sim. This is only the variables for three of girls that the player will go on a date with to make this able to work the designer
+    made it so that when talking to the girls that there are three answers and each has their own separate variable. If there is a better way to do this please email me. I am always open to suggestions. All of the variables that are in variants of answers
+    are used to see if the player will succeed in the first impression. On the left is an example for the dolphin girl where we can look at the different branches that would go into deciding whether or not the date was a success. The way we decided if the
+    a player failed or not was by analyzing the amount of good to bad to ok answers. If the player were to get at least two bad answers then they would fail. if they were to get a good, a bad, and an ok answer then they would pass.
+    same for all good and all ok answers, if they were to get two ok's and one bad then they would fail. This is the simplest i could put the explanation, because while making this it took me awhile to figure out all of the
+    possible outcomes and correlate that into the code as a win or lose cenario.</p>
+    <img src="dating_sim/platformingMovement.jpg" alt="mainMenueCode" width="891px" height="206px" class="fL"/><img src="dating_sim/platformingLv.jpg" alt="mainMenueCode" width="900px" height="206px" class="fR"/>
+    <p>Before each date with the girls the player must go through a 2D side scroller that is like "Geometry-dash". The point of this is to signify trying to go through a paruless journey to reach a girl's heart. Each girl is supposed to have their own platforming level to
+    correlate to what the personality of the girl is. The one presented is that for the dear girl, at the end of each stage is a castle with a heart shaped dore. The code to achieve the ado side scroller was achieved by taking the players movement speed and anding a multiplayer
+    to make it so the character(in this case a heart) moves at a constant speed. The player can not initiate any further movement other than to jump to navigate the level. Each level has its own obstacles to avoid that will kill the player and force them
+    to start at the beginning. if they do complete the level they will only have to do it once because of a variable that sees if the player has completed it before. This is because if you don't succeed in the actual date part you will not have to do the entire platforming section
+    again.</p>
+    <img src="dating_sim/gettingAns.jpg" alt="gettingAnsCode" width="1144px" height="350px" class="fR"/><img src="dating_sim/dearQ1.jpg" alt="q1OfDear" width="650px" height="350px" class="fL"/>
+    <p>How do we find out whether or not the player chose the correct or incorrect answer. The image on the left is what the player will see when the first question is asked given three answers to choose from. The code on the right shows that each question
+    has a button correlated with it. two of the three buttons have a variable correlated with it in the level so simplify things, so if the player does not click on ethir the good or ok answer then the game will count it as a bad
+    answer. When this happens then the code will  set the variable that is stored in the game instance board and set it to true if that is what is selected. This is all calculated when the player enters the next question so that it makes the expression
+    visible according to your answer. This is to help prevent sprite clipping where two or more sprites are in the same location and makes the image not look as clean as it could be. The code for this is consistent between all of the girls.</p>
+
+  </body>
+</html>

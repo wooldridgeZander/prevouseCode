@@ -1,0 +1,4 @@
+﻿  hangman.cpp
+H:\RRCC c++ course\Hangman\Hangman\hangman.cpp(100,23): warning C4018: '<': signed/unsigned mismatch
+H:\RRCC c++ course\Hangman\Hangman\hangman.cpp(95,8): warning C4102: 'std': unreferenced label
+  Hangman.vcxproj -> H:\RRCC c++ course\Hangman\Hangman\Debug\Hangman.exe
